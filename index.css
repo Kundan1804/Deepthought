@@ -1,0 +1,192 @@
+#outerbox{
+    position: absolute;
+    width: 1036px;
+    height: 1449px;
+    left: 225px;
+    right: 127px;
+    top: 275px;
+    background: #FFFFFF;
+    border: 1px solid #F0F0F0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+
+}
+
+.top{
+    padding: 11px 0px 12px 19px;
+    position: absolute;
+    width: 1019px;
+    height: 51px;
+    left: 225px;
+    right: 127px;
+    top: 222px;
+    background: #0029FF;
+    border-radius: 10px 10px 0px 0px; 
+
+}
+h4{
+    text-align: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+.collapsible {
+    width: 450px;
+    overflow: hidden;
+    font-weight: 500;
+}
+.collapsible input{
+    display: none;
+}
+
+.collapsible label{
+    position: relative;
+    font-weight: 600;
+    background: black;
+    border: 1px solid #F0F0F0;
+    color: #fff;
+    border-radius: 10px 10px 0px 0px;
+    display: block;
+    margin-bottom: 0px;
+    cursor: pointer;
+    padding: 15px;
+    z-index: 1;
+    height: 28px;
+}
+
+.collapsible label::after{
+    content: "";
+    position: absolute; 
+    right: 15px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    background: url(https://www.freeiconspng.com/thumbs/white-arrow-png/curved-white-arrow-png-0.png) no-repeat 0 0;
+    transform: rotate(90deg);
+    
+}
+
+.collapsible input:checked + label::after{
+    transform: rotate(0deg);
+    transition: all 0.3s  ease;
+    
+}
+
+.collapsible-text{
+    overflow: hidden;
+    border-radius: 4px;
+    line-height: 1.4;
+    position: relative;
+    top: -100%;
+    opacity: 0.5;
+    transition: all 0.3s  ease;
+}
+
+.collapsible input:checked ~ .collapsible-text{
+    max-height: 400px;
+    padding-bottom: 25px;
+    background: #fff;
+    border-radius: 10px;
+    opacity: 1;
+    top: 0;
+}
+.collapsible-text p {
+    margin-top: 0;
+    padding-left: 15px;
+    padding: right 15px;
+    border: solid #F0F0F0;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+textarea{
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 100px;
+    width: 410px;
+}
+img{
+    width: 410px;
+}
+video{
+    width: 410px;
+}
+.mixed{
+    height: 50px;
+}
+.c1{
+    Height: 320px;
+    Top: 403px;
+    Left: 243px;
+}
+.c3{
+    height:510px;
+    top: 1053px;
+    left: 264px;
+}
+.c5{
+    height:510px;
+    top: 1700px;
+    left: 268px;
+}
+button{
+    right: 55px;
+    background-color: #0029FF;
+    width: 89.07px;
+    height: 76.32px;
+    border-radius: 5px;
+    position: absolute;
+    top: 1280px;
+}
+.sidebar-top{
+    background-color: black;
+    color: #fff;
+    width: 220px;
+    top: 202px;
+    left:0px;
+    position: absolute;
+    height: 51px;
+    z-index: 2;
+    border: solid #F0F0F0;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    text-align: center;
+    
+}
+.sidebar-bottom{
+    padding-left: 0px;
+    top: 251px;
+    left:0px;
+    position: absolute;
+    height: 350px;
+    z-index: 3;
+    border: solid #F0F0F0;
+    border-width: 0px 1px 1px 1px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.orderedlist{
+    font-weight: bolder;
+    cursor: pointer;
+}
+ol{
+    padding-left: 35px;
+}
+.sidebar{
+    translate: -190px 0;
+    transition: translate 1s;
+}
+ .sidebar >.sidebar-bottom{
+    opacity: 0;
+}
+
+.sidebar:hover{
+    translate: -5px 0;;
+}
+.sidebar:hover >.sidebar-bottom{
+    opacity: 1;
+}
+
